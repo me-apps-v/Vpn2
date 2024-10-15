@@ -1,0 +1,68 @@
+/* Основные стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning-container {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.alert-text {
+    font-size: 2.5rem;
+    color: #ff0033;
+    font-weight: bold;
+    animation: flicker 1s infinite alternate;
+}
+
+.timer-container {
+    margin: 20px 0;
+}
+
+.drop-timer {
+    font-size: 3rem;
+    color: #ffdd33;
+    position: relative;
+    animation: drip 1s infinite;
+}
+
+.message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.stop-leak-btn {
+    font-size: 1.5rem;
+    background: #ff0033;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.stop-leak-btn:hover {
+    background: #cc002a;
+}
+
+/* Анимации */
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes drip {
+    0% { top: 0px; }
+    50% { top: 10px; }
+    100% { top: 0px; }
+}
